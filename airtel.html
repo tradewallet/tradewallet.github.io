@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<script src="js/jquery-1.11.3.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style2.css">
+
+	
+</head>
+<body>
+    <div class="wrapper-fluid">
+<header >
+     
+    <div class="left-header">
+        <img src="image/top-1.png" style="width:100%">
+
+
+    </div>
+     <div class="center-header">
+       <h4 class="top-left">Cash Deposit</h4> 
+        
+        
+    </div>
+    <div class="right-header">
+                <a href="#"><img src="image/logo.png" style="width:100%"></a>
+                
+                
+     </div>
+                
+
+            
+</header>
+   
+    <div class="container">
+          
+		<div class="container-inner">
+
+            <div class="bg" id="background">
+                <!-- <img src="image/mobile.png" style="width:100%"> -->
+         <img src="image/1.gif"  class="button" value="Count" id="countButton" />
+             <div class="inner-wrapper">
+                  <img id="target" src="image/1.png">
+
+                   
+             </div>
+             
+             </div>
+	   </div>
+    </div> 
+
+    <footer><div id="aum">Tap on <span class="red">Open Bank Account</span></div>	</footer>
+</div>
+<script>
+   var count = 1;
+      var button = document.getElementById("countButton");
+      button.onclick = function()
+      {
+        count++;
+        if(count==2)
+        {
+             $("#target").fadeOut(200, function () {
+              $(this).attr('src', 'image/2.png').fadeIn(200);
+              $('#countButton').css({top: 356, left: 106});
+              $("#aum").html("Enter Customer's Mobile Number and Tap on <span class='red'>Submit</span>");
+          });
+        }
+        else if(count==3)
+        {
+             $("#target").fadeOut(200, function () {
+              $(this).attr('src', 'image/3.png').fadeIn(200);
+              $('#countButton').css({top: 497, left: 96});
+              $("#aum").html("Enter Customer's OTP and Tap on <span class='red'>Submit</span>");
+          });
+        }
+        else if(count==4)
+        {
+             $("#target").fadeOut(200, function () {
+              $(this).attr('src', 'image/4.png').fadeIn(200);
+              $('#countButton').css({top: 578, left: 0});
+              $("#aum").html("Ask Customer to scan fingerprint");
+          });
+        }
+
+      }	
+</script>
+</body>
+</html>
