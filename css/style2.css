@@ -16,8 +16,13 @@ display: table; width: 100%;
 .top-left{margin:4px; padding-left:12px; font-size:33px; font-weight:normal; color:black;}
  li .open-bank{list-style-image: url('image/ico1.jpg');}
 
-.container{text-align: center; padding-top: 9px; /*padding-bottom: 62px;*/}
-.container-inner{width:500px; margin: 0 auto;}
+.container{text-align: center;  /*padding-bottom: 62px;*/}
+.container-inner{width:100%; margin: 0 auto;}
+.container-inner #target
+{
+  width: 100%;
+}
+
 /*.clear::after, .clear::before {
 content: "";
 display: table;
@@ -80,11 +85,11 @@ clear: both;}*/
 .bg {
  z-index: 1;
  height: 800px;
- width: 411px;
+ width: 100%;
  margin: 0 auto;
   text-align: center;
   
-  background-image: url('../image/mobile.png');
+  /*background-image: url('../image/mobile.png');*/
   background-repeat: no-repeat;
 background-position: top center;
 background-size: 100% 100%;
@@ -164,39 +169,13 @@ footer{background: #474747;padding: 18px; text-align: center; color: #fff; z-ind
 	font-size: 28px;
 }
 @media (min-width: 320px) and (max-width: 480px) {
-  .wrapper-fluid{margin:0 auto; max-width:100%; background:#ededed;}
 	.left-header{float:none;  padding:10px 110px 10px 110px; border: none;}
 	.top-left{margin:0px; padding-left:40px; font-size:28px; }
     .bg { left:0;}
-	.inner-wrapper{ padding-top:0px;position: relative;
-margin-top: -12px; margin-left: -1px;  padding-left:10px;padding-right:11px;}
-	.container{padding-top: 0px;}
+	.inner-wrapper{ padding-top:125px;  padding-left:10px;padding-right:11px;}
+	.container{}
 	#btn_container{width:52px;float:left; }
-	.bg
-  {
-    width:65%;
-    height: 382px;
-    margin-bottom: 8px;
-  }
-  .button
-  {
-    top:66px;
-    left: 74px;
-    height: 52px;
-width: 61px;
-  }
-  #aum {
-    font-size: 14px;
-}
-  .inner-wrapper img
-  {
-    width:194px;
-    height: 329px;
-  }
-  header
-  {
-    display: none;
-  }
+	
 	.btn{
        position: relative;
        height:60px;
@@ -206,7 +185,7 @@ width: 61px;
 	   cursor:url(../image/cur2.gif), auto;
 	}
 	.text-span{	padding-top: 11px;}
-	footer{padding: 10px;  margin-top:0px; font-size: 12px;}
+	footer{padding: 20px;  margin-top:0px; font-size: 12px;}
 }
 @media (min-width: 320px) and (max-width: 480px) {
 	.left-header{float:none;  padding:10px 130px 10px 130px; border: none;}
