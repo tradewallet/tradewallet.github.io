@@ -13,7 +13,7 @@
 	<header >
      
     <div class="left-header">
-        <img src="image/top-1.png" class="button" id="bckbtn">
+        <img src="img/top-1.png" class="button" id="bckbtn">
 
 
     </div>
@@ -23,7 +23,7 @@
         
     </div>
     <div class="right-header">
-                <a href="#"><img src="image/logo.png" ></a>
+                <a href="#"><img src="img/logo.png" ></a>
                 
                 
      </div>
@@ -32,8 +32,8 @@
             
 </header>
 <div class="inner_content">
-	<img src="image/1.png" id="mainImg">
-	 <img src="image/red.gif"  class="button" value="Count" id="countButton" />
+	<img src="img/1.png" id="mainImg">
+	 <img src="img/red.gif"  class="button" value="Count" id="countButton" />
 </div>
 
 </div>
@@ -53,8 +53,8 @@
      
         if(count==2)
         {
-             $("#mainImg").fadeOut(200, function () {
-              $(this).attr('src', 'image/2.png').fadeIn(200);
+             $("#mainImg").fadeOut(10, function () {
+              $(this).attr('src', 'img/2.png').fadeIn(100);
               $('#countButton').css({top: '82%', left: '82%'});
               $("#aum").html("Click on <span class='red'>Make Payment</span> button.");
               backcount =1;
@@ -63,8 +63,8 @@
         }
         else if(count==3)
         {
-             $("#mainImg").fadeOut(200, function () {
-              $(this).attr('src', 'image/3.png').fadeIn(200);
+             $("#mainImg").fadeOut(10, function () {
+              $(this).attr('src', 'img/3.png').fadeIn(100);
               $('#countButton').css({top: '91%', left: '91%'});
               $("#aum").html("Click on <span class='red'>Pay Now</span>");
               backcount =2;
@@ -73,8 +73,8 @@
         }
         else if(count==4)
         {
-             $("#mainImg").fadeOut(200, function () {
-              $(this).attr('src', 'image/5.png').fadeIn(200);
+             $("#mainImg").fadeOut(10, function () {
+              $(this).attr('src', 'img/5.png').fadeIn(100);
               $('#countButton').css({top: '89%', left: '48%'});
               $("#aum").html("Select desire payment mode and click on <span class='red'>Pay Now</span>");
               backcount =3;
@@ -84,8 +84,8 @@
         }
         else if(count==5)
         {
-             $("#mainImg").fadeOut(200, function () {
-              $(this).attr('src', 'image/6.png').fadeIn(200);
+             $("#mainImg").fadeOut(10, function () {
+              $(this).attr('src', 'img/6.png').fadeIn(100);
               $('#countButton').css({top: '80%', left: '66%'});
               $("#aum").html("Enter mPIN and click on  <span class='red'>LOAD MONEY</span>");
               backcount =4;
@@ -94,8 +94,8 @@
         }
         else if(count==6)
         {
-             $("#mainImg").fadeOut(200, function () {
-              $(this).attr('src', 'image/7.png').fadeIn(200);
+             $("#mainImg").fadeOut(10, function () {
+              $(this).attr('src', 'img/7.png').fadeIn(100);
               $('#countButton').css({top: '67%', left: '55%'});
               $("#aum").html("Click on <span class='red'>Make Payment</span>");
               backcount =5;
@@ -110,8 +110,8 @@
       	
       	if(backcount ==1)
       	{
-      		 $("#mainImg").fadeOut(200, function () {
-              $(this).attr('src', 'image/1.png').fadeIn(200);
+      		 $("#mainImg").fadeOut(10, function () {
+              $(this).attr('src', 'img/1.png').fadeIn(100);
               $("#aum").html("Click on <span class='red'>View/Pay Bill</span>. Enter Customer Type, Consumer No, BU details, click on <span class='red'>Submit</span> button.");
               $('#countButton').css({top: '43%', left: '88%'});
               count=2;
@@ -119,8 +119,8 @@
       	}
       	else if(backcount ==2)
       	{
-      		$("#mainImg").fadeOut(200, function () {
-              $(this).attr('src', 'image/2.png').fadeIn(200);
+      		$("#mainImg").fadeOut(10, function () {
+              $(this).attr('src', 'img/2.png').fadeIn(100);
               $('#countButton').css({top: '82%', left: '82%'});
               $("#aum").html("Click on <span class='red'>Make Payment</span> button.");
               backcount =1;
@@ -129,8 +129,8 @@
       	}
       	else if(backcount ==3)
       	{
-      		 $("#mainImg").fadeOut(200, function () {
-              $(this).attr('src', 'image/3.png').fadeIn(200);
+      		 $("#mainImg").fadeOut(10, function () {
+              $(this).attr('src', 'img/3.png').fadeIn(100);
               $('#countButton').css({top: '91%', left: '91%'});
               $("#aum").html("Click on <span class='red'>Pay Now</span>");
               backcount =2;
@@ -139,8 +139,8 @@
       	}
       	else if(backcount ==4)
       	{
-      		 $("#mainImg").fadeOut(200, function () {
-              $(this).attr('src', 'image/5.png').fadeIn(200);
+      		 $("#mainImg").fadeOut(10, function () {
+              $(this).attr('src', 'img/5.png').fadeIn(100);
               $('#countButton').css({top: '89%', left: '48%'});
               $("#aum").html("Select desire payment mode and click on <span class='red'>Pay Now</span>");
               backcount =3;
@@ -149,19 +149,19 @@
       	}
       	else if(backcount ==5)
       	{
-      		 $("#mainImg").fadeOut(200, function () {
-               $(this).attr('src', 'image/6.png').fadeIn(200);
+      		 $("#mainImg").fadeOut(10, function () {
+               $(this).attr('src', 'img/6.png').fadeIn(100);
               $('#countButton').css({top: '80%', left: '66%'});
               $("#aum").html("Enter mPIN and click on  <span class='red'>LOAD MONEY</span>");
               backcount =4;
                   count=6;
               });
       	}
-        
+
       	else if(backcount ==6)
       	{
-      		 $("#mainImg").fadeOut(200, function () {
-               $(this).attr('src', 'image/7.png').fadeIn(200);
+      		 $("#mainImg").fadeOut(10, function () {
+               $(this).attr('src', 'img/7.png').fadeIn(100);
               $('#countButton').css({top: '67%', left: '55%'});
               $("#aum").html("Click on <span class='red'>Make Payment</span>");
               backcount =5;
